@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 {% extends "partials/base.html" %}
 {% load staticfiles%}
 {% block title %}Ian's Site{% endblock title %}
@@ -6,12 +8,18 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">Hi, I'm Ian</h1>
-                <p class="lead text-muted">Hi, I'm Ian and I like experimenting with web development, especially in Python</p>
-                <p>
-                    <a href="mailto:ian.fraser858@gmail.com" class="btn btn-primary my-2">Email Me</a>
-                </p>
-                <img src="{% static 'face.jpg' %}" height="300px"/>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h1 class="jumbotron-heading">Hi, I'm Ian</h1>
+                        <p class="lead text-muted">Hi, I'm Ian and I like experimenting with web development, especially in Python</p>
+                        <p>
+                            <a href="mailto:icf0001@auburn.edu" class="btn btn-primary my-2">Email Me</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{% static 'face.jpg' %}" height="300px"/>
+                    </div>
+                </div>
             </div>
         </section>
 
