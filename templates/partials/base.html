@@ -2,6 +2,13 @@
 <html lang="en">
 {% load staticfiles %}
 <head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121903981-1');
+    </script>
     <meta charset="UTF-8">
     <title>{% block title%}Default title{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,13 +19,6 @@
     <link rel="stylesheet" href="static/css/portfolio.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121903981-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-121903981-1');
-    </script>
 </head>
 <body>
     <header>
