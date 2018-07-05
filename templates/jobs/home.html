@@ -2,6 +2,17 @@
 <html lang="en">
 {% extends "partials/base.html" %}
 {% load staticfiles%}
+{% block analytics %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121903981-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121903981-1');
+    </script>
+{% endblock analytics %}
 {% block title %}Ian's Site{% endblock title %}
 {% block content %}
     <main role="main">
