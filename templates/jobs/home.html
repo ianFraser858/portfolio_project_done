@@ -1,17 +1,6 @@
 {% extends "partials/base.html" %}
 {% load staticfiles%}
 {% block title %}Ian's Site{% endblock title %}
-{% block analytics %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121903981-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-121903981-1');
-    </script>
-{% endblock analytics %}
 {% block content %}
     <main role="main">
 
@@ -20,7 +9,15 @@
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <h1 class="jumbotron-heading">Hi, I'm Ian</h1>
-                        <p class="lead text-muted">Hi, I'm Ian and I like experimenting with web development, especially in Python</p>
+                        <p class="lead text-muted">
+                            Hi, I'm Ian and I'm a senior Information Systems Management major at Auburn University
+                            with a passion for information technology, software development, and data analysis.
+                            I believe that the job of IT is to bring a common-sense viewpoint and bridge the gap
+                            between a technology oriented world world and everyday business processes.
+                            I have work experience with communicating technology ideas to people, software development,
+                            as well as experience with organization and team management. Some examples of work I've done
+                            can be seen below!
+                        </p>
                         <p>
                             <a href="mailto:icf0001@auburn.edu" class="btn btn-primary my-2">Email Me</a>
                         </p>
