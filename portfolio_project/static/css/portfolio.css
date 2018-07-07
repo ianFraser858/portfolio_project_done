@@ -2,6 +2,10 @@
     background-color: rgba(0, 123, 255, 0.25);
 }
 
+#blog_stuff {
+    padding-top: 50px;
+}
+
 @media screen and (max-width: 580px) {
     body { padding-top: 50px; }
 }

@@ -1,4 +1,5 @@
 Django==2.0.6
+django-summernote==0.8.8.7
 gunicorn==19.8.1
 Pillow==5.1.0
 psycopg2==2.7.5
