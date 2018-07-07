@@ -38,7 +38,11 @@
                                 <img class="card-img-top" src="{{ job.image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ job.title }}</h5>
-                                    <p class="card-text">{{ job.summary }}</p>
+                                    <p class="card-text">{{ job.summary | safe }}</p>
+                                    <div class="btn-group-right">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link to Project</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
