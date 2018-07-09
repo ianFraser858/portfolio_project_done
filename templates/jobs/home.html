@@ -40,12 +40,12 @@
                                     <h5 class="card-title">{{ job.title }}</h5>
                                     <p class="card-text">{{ job.summary | safe }}</p>
                                     <div class="btn-group-right">
+                                        <a href="{% url 'summary' job.id%}">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
-                                            <a href="{% url 'summary' job.id%}">
                                             View Details
-                                            </a>
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link to Project</button>
+                                        </a>
+{#                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link to Project</button>#}
                                     </div>
                                 </div>
                             </div>

@@ -4,6 +4,7 @@
 
 #blog_stuff {
     padding-top: 50px;
+    background-color: rgba(0, 123, 255, 0.25);
 }
 
 @media screen and (max-width: 580px) {
