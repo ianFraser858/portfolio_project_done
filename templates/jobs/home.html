@@ -3,7 +3,6 @@
 {% block title %}Ian's Site{% endblock title %}
 {% block content %}
     <main role="main">
-
         <section class="jumbotron text-center">
             <div class="container">
                 <div class="row mt-5">
@@ -28,7 +27,6 @@
                 </div>
             </div>
         </section>
-
         <div class="py-5 bg-dark">
             <div class="container">
                 <div class="row" style="display:flex; flex-wrap: wrap;">
@@ -38,14 +36,18 @@
                                 <img class="card-img-top" src="{{ job.image.url }}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ job.title }}</h5>
-                                    <p class="card-text">{{ job.summary | safe }}</p>
+                                    <p class="card-text">{{ job.blurb | safe }}</p>
                                     <div class="btn-group-right">
                                         <a href="{% url 'summary' job.id%}">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">
                                             View Details
                                         </button>
                                         </a>
-{#                                        <button type="button" class="btn btn-sm btn-outline-secondary">Link to Project</button>#}
+                                        {% if job.github_link != 'none' %}
+                                            <a href="{{ job.github_link }}" target="_blank">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">Link to Project</button>
+                                            </a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>

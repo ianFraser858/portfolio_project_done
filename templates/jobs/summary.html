@@ -11,20 +11,14 @@
                     <h2 class="blog-post-title text-center">{{ job.title }}</h2>
                     <hr>
                     <div class="row">
-{#                        <div class="col-md-12">#}
-                            <div class="float-md-right">
+                        <div class="col-md-6">
                                 <img class="img-fluid" src="{{ job.image.url }}">
-{#                            </div>#}
-                            </div>
+                        </div>
+                        <div class="col-md-6">
                             <p>
                                 {{ job.summary | safe }}
                             </p>
-{#                        <div class="col-md-4">#}
-{#                            <p>#}
-{#                                {{ job.summary | safe }}#}
-{#                            </p>#}
-{#                        </div>#}
-
+                        </div>
                     </div>
                 </div>
             </div>
