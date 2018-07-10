@@ -5,9 +5,9 @@ from .models import Job
 # Register your models here.
 
 
-class SomeModelAdmin(SummernoteModelAdmin):  # instead of ModelAdmin
-    summernote_fields = '__all__'
+class JobAdmin(SummernoteModelAdmin):
+    summernote_fields = ('content',)
 
 
-admin.site.register(Job, SomeModelAdmin)
+admin.site.register(Job, JobAdmin)
 # admin.site.register(Job)

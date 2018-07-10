@@ -7,7 +7,7 @@ class Job(models.Model):
     image = models.ImageField(upload_to='images/')
     title = models.CharField(max_length=200)
     blurb = models.TextField(max_length=200)
-    summary = models.TextField(max_length=2000)
+    content = models.TextField(max_length=2000)
     github_link = models.URLField(default='none')
 
     def __str__(self):
